@@ -58,6 +58,7 @@ class JavaCalc{
             default:
                 System.out.println("Please enter valid Operator");
         }sc.close();
+        System.out.println("thank you for using our calculator");
     }
     
 }
