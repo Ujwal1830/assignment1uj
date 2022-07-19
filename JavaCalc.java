@@ -19,11 +19,18 @@ class JavaCalc{
 
         operator = sc.nextLine();
         
+        if(!(operator == "per")){
+            System.out.println("Enter Obatined total => ");
+            num1 = sc.nextInt();
+            System.out.println("Enter Actual total => ");
+            num2 = sc.nextInt();
+
+        }else{
             System.out.println("Enter your 1st number => ");
             num1 = sc.nextInt();
             System.out.println("Enter your 2nd number => ");
             num2 = sc.nextInt();
-        
+        }
 
         switch (operator){
 
@@ -41,6 +48,10 @@ class JavaCalc{
             
             case "div": result = num1 / num2;
                 System.out.println(num1+" / "+num2+" = "+result);
+                break;
+            
+            case "per": result = (num1 / num2) * 100;
+                System.out.println(num1+" % "+num2+" = "+result+ "% ");
                 break;
 
 
